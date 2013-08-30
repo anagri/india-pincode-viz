@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <style type="text/css">
+        .d3-tooltip {
+            text-align: center;
+            width: 300px;
+            height: 42px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+        }
+    </style>
+    <script src="jquery-1.10.2.min.js" charset="utf-8"></script>
+    <script src="d3-tooltip.js" charset="utf-8"></script>
+    <script src="d3.v3.min.js" charset="utf-8"></script>
+    <title></title>
+</head>
+<body onload="init();">
+Pincode - <input type="text" name="pincode" placeholder="Enter Pincode" onkeyup="processInput();" id="pincode"/>
+<br/>
+<iframe src="india-districts.svg" style="border: none; width: 800px"></iframe>
+<h5>Visualization of Indian Postal Pincodes</h5>
+Source : <a href="http://data.gov.in/dataset/state-wise-percentage-and-number-persons-below-poverty-line-year-2009-10">data.gov.in</a>
+<br/>
+<script type="text/javascript" src="map-pincodes.js"></script>
+</body>
+</html>
